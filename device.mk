@@ -77,6 +77,7 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     FrameworksResTopaz \
     SystemUIResCommon \
+    SystemUIResTopaz \
     TelecommResCommon \
     TelephonyResCommon \
     WifiResCommon \
