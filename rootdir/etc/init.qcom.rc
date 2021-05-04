@@ -822,13 +822,3 @@ on property:vendor.opengles.version=*
 #Set gpu available frequencies property
 on property:vendor.gpu.available_frequencies=*
     setprop ro.vendor.gpu.available_frequencies ${vendor.gpu.available_frequencies}
-
-on property:sys.boot_completed=1 && property:ro.product.debugfs_restrictions.enabled=true && \
-   property:persist.dbg.keep_debugfs_mounted="" && property:ro.debuggable="1"
-   setprop persist.dbg.keep_debugfs_mounted 1
-
-on late-init && property:ro.build.type=user && property:ro.debuggable="1"
-    mount debugfs debugfs /sys/kernel/debug
-    chmod 0755 /sys/kernel/debug
-on property:sys.boot_completed=1 && property:ro.build.type=user && property:ro.debuggable="1"
-   chmod 0755 /sys/kernel/tracing
