@@ -2,10 +2,6 @@ on init
     chown system system /dev/goodix_fp
     chmod 0644 /dev/goodix_fp
 
-    # DT2W
-    chown system system /proc/tp_gesture
-    chmod 0644 /proc/tp_gesture
-
 on post-fs-data
     mkdir /data/vendor/fpc 0777 system system
     mkdir /data/vendor/goodix 0777 system system
@@ -31,6 +27,10 @@ on boot
 
     chmod 0664 /sys/bus/platform/devices/soc:xiaomi_fingerprint/fingerdown
     chown system graphics /sys/bus/platform/devices/soc:xiaomi_fingerprint/fingerdown
+
+    # DT2W
+    chown system system /dev/xiaomi-touch
+    chmod 0660 /dev/xiaomi-touch
 
     start nfc_hal_service
 
