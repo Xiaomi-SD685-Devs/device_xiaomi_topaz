@@ -380,6 +380,10 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     FrameworksResTopaz \
     SettingsResTopaz \
+    SettingsOverlayM7G \
+    SettingsOverlayM7N \
+    SettingsOverlayM7L \
+    SettingsOverlayM7IN \
     SystemUIResCommon \
     SystemUIResTopaz \
     TelecommResCommon \

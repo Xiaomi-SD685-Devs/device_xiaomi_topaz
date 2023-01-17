@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.settings.overlay.topaz.m7l">
+    <application android:hasCode="false" />
+    <overlay android:targetPackage="com.android.settings"
+             android:requiredSystemPropertyName="ro.boot.product.hardware.sku"
+             android:requiredSystemPropertyValue="m7l"
+             android:isStatic="true" />
+</manifest>
