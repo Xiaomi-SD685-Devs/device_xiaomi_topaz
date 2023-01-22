@@ -28,7 +28,7 @@
 
 <!-- Changes from Qualcomm Innovation Center are provided under the following license: -->
 <!--                                                                                   -->
-<!-- Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.          -->
+<!-- Copyright (c) 2022-2023 Qualcomm Innovation Center, Inc. All rights reserved.       -->
 <!-- SPDX-License-Identifier: BSD-3-Clause-Clear                                       -->
 <resource_manager_info>
     <config_params>
@@ -805,7 +805,7 @@ ports not conflicting with other audio paths  -->
                     <!-- see kvh2xml.h -->
                     <kvpair key="0xAD000000" value="0xAD00000C"/>
                 </devicePP-metadata>
-                <param snd_name="va-mic-mono" />
+                <param snd_name="va-mic-mono-lpi" />
             </capture_profile>
             <capture_profile name="SINGLE_MIC_16KHZ_16BIT_RAW_NLPI">
                 <param sample_rate="16000" />
