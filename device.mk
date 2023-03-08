@@ -264,6 +264,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom.vendor_ramdisk \
     init.class_main.sh \
+    init.goodix.events.sh \
     init.qcom.early_boot.sh \
     init.qcom.rc \
     init.qcom.sh \
