@@ -354,4 +354,7 @@
     <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
     <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/qcom-battery/quick_charge_type</string>
 
+    <!-- Build fingerprint from stock ROM -->
+    <string name="config_stockFingerprint" translatable="false">Redmi/topaz_global/topaz:13/TKQ1.221114.001/V14.0.7.0.TMGMIXM:user/release-keys</string>
+
 </resources>
