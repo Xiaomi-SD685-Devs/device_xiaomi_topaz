@@ -457,6 +457,11 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite \
     librmnetctl
 
+PRODUCT_PACKAGES += \
+    Ims \
+    QtiTelephony \
+    qti-telephony-common
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.multihal \
