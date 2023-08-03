@@ -268,6 +268,8 @@ PRODUCT_PACKAGES += \
     IPACM_cfg.xml \
     IPACM_Filter_cfg.xml
 
+USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
+
 # IR
 PRODUCT_PACKAGES += \
     android.hardware.ir-V1-ndk.vendor
