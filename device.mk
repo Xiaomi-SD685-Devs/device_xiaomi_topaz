@@ -67,6 +67,12 @@ PRODUCT_PACKAGES += \
     audio.usb.default
 
 PRODUCT_PACKAGES += \
+    agmcap \
+    agmcompressplay \
+    agmplay \
+    libagm_compress_plugin \
+    libagm_mixer_plugin \
+    libagm_pcm_plugin \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
@@ -338,6 +344,7 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl_plugin.vendor \
     libcodec2_vndk.vendor \
     libsfplugin_ccodec_utils.vendor \
+    libpalclient \
     libplatformconfig
 
 # Media stagefright
