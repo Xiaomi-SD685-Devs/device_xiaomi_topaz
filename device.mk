@@ -458,7 +458,7 @@ PRODUCT_PACKAGES += \
     librmnetctl
 
 PRODUCT_PACKAGES += \
-    Ims \
+    ims \
     QtiTelephony \
     qti-telephony-common
 

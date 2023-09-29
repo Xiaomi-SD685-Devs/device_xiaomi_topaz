@@ -5,9 +5,9 @@
 //
 
 android_app_import {
-    name: "Ims",
+    name: "ims",
     owner: "xiaomi",
-    apk: "Ims.apk",
+    apk: "ims.apk",
     certificate: "platform",
     dex_preopt: {
          enabled: false,
