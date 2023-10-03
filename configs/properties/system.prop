@@ -1,0 +1,77 @@
+# CNE
+persist.vendor.cne.feature=1
+
+# Charger
+ro.charger.enable_suspend=1
+
+# Ftrace
+persist.debug.ftrace_events_disable=Yes
+
+# Fwk-Detect
+ro.vendor.qti.va_aosp.support=1
+
+# Graphics
+debug.sf.disable_backpressure=1
+
+# Hint Manager
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
+
+# HWUI
+debug.hwui.skia_atrace_enabled=false
+
+# IMS
+persist.vendor.ims.no_stapa=1
+
+# IOrap
+persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
+ro.iorapd.enable=false
+
+# Media
+media.settings.xml=/vendor/etc/media_profiles_khaje_v0.xml
+media.aac_51_output_enabled=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-http=true
+media.stagefright.enable-player=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-scan=true
+media.stagefright.thumbnail.prefer_hw_codecs=true
+
+# NFC
+ro.nfc.port=I2C
+
+# NTP
+persist.backup.ntpServer="0.pool.ntp.org"
+
+# Radio
+DEVICE_PROVISIONED=1
+persist.vendor.radio.atfwd.start=true
+ril.subscription.types=NV,RUIM
+rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
+ro.telephony.default_network=33,33
+telephony.lteOnCdmaDevice=1
+
+# SdCardFS
+persist.sys.fuse.passthrough.enable=true
+
+# Soc
+ro.soc.manufacturer=QTI
+ro.soc.model=SM6225
+
+# Sensors
+persist.vendor.sensors.enable.mag_filter=true
+
+# SSR
+persist.vendor.ssr.enable_ramdumps=1
+persist.vendor.ssr.restart_level=ALL_ENABLE
+
+# Wi-Fi Display
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0
+
+# WLAN
+ro.hardware.wlan.chip=wcn3950
+ro.hardware.wlan.dbs=0
+ro.hardware.wlan.mimo=0
+ro.hardware.wlan.vendor=qcom
