@@ -169,6 +169,7 @@ ro.surface_flinger.protected_contents=true
 ro.surface_flinger.set_touch_timer_ms=200
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
+ro.vendor.display.type=oled
 vendor.display.camera_noc_efficiency_factor=0.70
 vendor.display.comp_mask=8192
 vendor.display.disable_excl_rect=0
@@ -192,13 +193,6 @@ vendor.display.use_smooth_motion=1
 vendor.display.vds_allow_hwc=1
 vendor.gralloc.disable_ubwc=0
 vendor.gralloc.secure_preview_buffer_format=420_sp
-
-# Display Calib
-ro.vendor.display.sensortype=2
-ro.vendor.display.svi=1
-ro.vendor.display.type=oled
-vendor.display.svi.config=1
-vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 
 # Displayfeature
 ro.vendor.all_modes.colorpick_adjust=true
@@ -275,9 +269,6 @@ persist.vendor.sensors.enable.rt_task=false
 persist.vendor.sensors.hal_trigger_ssr=false
 persist.vendor.sensors.support_direct_channel=false
 
-# Soc
-ro.soc.manufacturer=QTI
-
 # USB
 vendor.usb.diag.func.name=diag
 vendor.usb.dpl.inst.name=dpl
@@ -287,12 +278,6 @@ vendor.usb.rmnet.inst.name=rmnet
 vendor.usb.rndis.func.name=gsi
 vendor.usb.use_ffs_mtp=0
 vendor.usb.use_gadget_hal=0
-
-# WLAN
-ro.hardware.wlan.chip=wcn3950
-ro.hardware.wlan.dbs=0
-ro.hardware.wlan.mimo=0
-ro.hardware.wlan.vendor=qcom
 
 # Wi-Fi
 wifi.aware.interface=wifi-aware0

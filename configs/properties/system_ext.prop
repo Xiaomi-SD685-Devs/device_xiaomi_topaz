@@ -1,0 +1,16 @@
+# DPM
+persist.vendor.dpm.feature=11
+
+# GPS
+persist.sys.gps.fence=true
+
+# Graphics
+persist.wm.enable_remote_keyguard_animation=0
+ro.surface_flinger.supports_background_blur=1
+
+# Media
+vendor.media.target_variant=_khaje_v0
+
+# Radio
+ro.telephony.sim_slots.count=1
+telephony.active_modems.max_count=2
