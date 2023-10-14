@@ -459,8 +459,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     ims \
-    QtiTelephony \
-    qti-telephony-common
+    QtiTelephony
 
 # Sensors
 PRODUCT_PACKAGES += \
