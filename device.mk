@@ -479,8 +479,7 @@ PRODUCT_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
 # RIL
 PRODUCT_PACKAGES += \
     Ims \
-    QtiTelephony \
-    qti-telephony-common
+    QtiTelephony
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
