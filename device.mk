@@ -33,5 +33,10 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# Init
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    fstab.qcom.vendor_ramdisk
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
