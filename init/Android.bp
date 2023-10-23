@@ -3,6 +3,17 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
+cc_library_static {
+    name: "init_topaz",
+    recovery_available: true,
+    shared_libs: ["libbase"],
+    srcs: ["init_topaz.cpp"],
+    include_dirs: [
+        "system/core/init",
+        "system/libbase/include"
+    ]
+}
+
 prebuilt_etc {
     name: "fstab.qcom",
     src: "fstab.qcom",
