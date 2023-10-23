@@ -26,3 +26,6 @@ service stflashtool /vendor/bin/STFlashTool
     group nfc
     user nfc
     oneshot
+
+on property:ro.boot.hwname=*
+    setprop ro.boot.product.hardware.sku ${ro.boot.hwname}
