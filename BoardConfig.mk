@@ -209,6 +209,12 @@ BOARD_AVB_VENDOR_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
 BOARD_AVB_VENDOR_DLKM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
 BOARD_AVB_ODM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
 
+# VINTF
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml 
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
+ODM_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/network_manifest.xml
+
 # WiFi
 BOARD_WLAN_DEVICE := qcwcn
 BOARD_HOSTAPD_DRIVER := NL80211
