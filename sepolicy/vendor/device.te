@@ -1,0 +1,4 @@
+type vendor_displayfeature_device, dev_type;
+type sound_device, dev_type, mlstrustedobject;
+type vendor_fingerprint_device, dev_type;
+type lirc_device, dev_type;

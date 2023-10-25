@@ -1,0 +1,13 @@
+# Extcon
+genfscon sysfs /devices/platform/soc/1610000.qcom,msm-eud/extcon u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/soc/soc:spf_core_platform/soc:spf_core_platform:bolero-codec/va-macro/extcon u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/soc/soc:spf_core_platform/soc:spf_core_platform:bolero-codec/wcd937x-codec/extcon u:object_r:sysfs_extcon:s0
+
+# Suspend
+genfscon sysfs /devices/platform/soc/soc:fingerprint_goodix/wakeup                                  u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-006a/power_supply/bbc/wakeup18 u:object_r:sysfs_wakeup:s0
+
+# Vibrator
+genfscon sysfs /devices/platform/soc/[a-f0-9]+.qcom,spmi/spmi-0/spmi0-0[0-9]/[a-f0-9]+.qcom,spmi:qcom,[a-z0-9]+@[0-9]:qcom,haptics@c000/leds/vibrator(/.*)?   u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/soc/soc:vibrator_gpio/leds/vibrator u:object_r:sysfs_leds:s0
