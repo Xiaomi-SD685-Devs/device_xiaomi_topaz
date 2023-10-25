@@ -1,0 +1,57 @@
+# Camera
+vendor.camera.sensor.           u:object_r:vendor_camera_sensor_prop:s0
+
+# Device ID
+persist.vendor.radio.imei       u:object_r:vendor_deviceid_prop:s0
+persist.vendor.radio.meid       u:object_r:vendor_deviceid_prop:s0
+ro.vendor.oem.imei              u:object_r:vendor_deviceid_prop:s0
+ro.vendor.oem.meid              u:object_r:vendor_deviceid_prop:s0
+ro.vendor.oem.psno              u:object_r:vendor_sno_prop:s0
+ro.vendor.oem.sno               u:object_r:vendor_sno_prop:s0
+
+# Display
+ro.vendor.eyecare.threshold              u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.eyecare.level                  u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.hist.threshold                 u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.histogram.enable               u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.whitepoint_calibration_enable  u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.df.effect.conflict             u:object_r:vendor_displayfeature_prop:s0
+persist.vendor.df.extcolor.proc          u:object_r:vendor_displayfeature_prop:s0
+vendor.displayfeature.entry.enable       u:object_r:vendor_displayfeature_prop:s0
+persist.vendor.df.color.temp             u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.colorpick_adjust               u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.all_modes.colorpick_adjust     u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.display.type                   u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.xiaomi.bl.poll                 u:object_r:vendor_displayfeature_prop:s0
+persist.vendor.dc_backlight.threshold    u:object_r:vendor_displayfeature_prop:s0
+persist.vendor.dc_backlight.enable       u:object_r:vendor_displayfeature_prop:s0
+persist.vendor.dfps.level                u:object_r:vendor_displayfeature_prop:s0
+persist.vendor.power.dfps.level          u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.cabc.enable                    u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.bcbc.enable                    u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.dfps.enable                    u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.smart_dfps.enable              u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.display.default_fps            u:object_r:vendor_displayfeature_prop:s0
+vendor.hbm.enable                        u:object_r:vendor_displayfeature_prop:s0
+persist.vendor.max.brightness            u:object_r:vendor_displayfeature_prop:s0
+
+# Fingerprint
+persist.vendor.sys.fp.                   u:object_r:vendor_fp_prop:s0
+persist.vendor.sys.fp.info               u:object_r:vendor_fp_info_prop:s0
+persist.vendor.sys.fp.uid                u:object_r:vendor_fp_info_prop:s0
+vendor.fps_hal.                          u:object_r:vendor_fp_prop:s0
+vendor.panel.display.                    u:object_r:vendor_fp_prop:s0
+vendor.sys.fp.                            u:object_r:vendor_fp_prop:s0
+
+# Mlipay
+persist.vendor.sys.pay.                  u:object_r:vendor_payment_security_prop:s0
+persist.vendor.sys.provision.status      u:object_r:vendor_payment_security_prop:s0
+vendor.sys.feature_state                 u:object_r:vendor_payment_security_prop:s0
+vendor.sys.rpmb_state                    u:object_r:vendor_payment_security_prop:s0
+
+# Radio
+ro.vendor.ril.svlte1x  u:object_r:vendor_radio_prop:s0
+ro.vendor.ril.svdo  u:object_r:vendor_radio_prop:s0
+
+# Thermal
+vendor.sys.thermal.data.path             u:object_r:vendor_thermal_normal_prop:s0

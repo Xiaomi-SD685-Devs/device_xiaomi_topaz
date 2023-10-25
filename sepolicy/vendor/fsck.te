@@ -1,0 +1,2 @@
+allow fsck fsck:capability kill;
+allow fsck vendor_custom_ab_block_device:blk_file { read write open ioctl };
