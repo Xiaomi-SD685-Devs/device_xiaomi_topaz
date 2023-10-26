@@ -111,6 +111,7 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     com.qualcomm.qti.bluetooth_audio@1.0.vendor \
     vendor.qti.hardware.bluetooth_audio@2.1.vendor \
+    vendor.qti.hardware.bluetooth.audio-V1-ndk.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
 
@@ -186,6 +187,8 @@ PRODUCT_PACKAGES += \
 
 # Display NDK
 PRODUCT_PACKAGES += \
+    android.hardware.light-V2-ndk.vendor \
+    android.hardware.memtrack-V1-ndk.vendor \
     vendor.qti.hardware.display.config-V1-ndk.vendor \
     vendor.qti.hardware.display.config-V2-ndk.vendor \
     vendor.qti.hardware.display.config-V3-ndk.vendor \
@@ -200,6 +203,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
     android.hardware.drm-service.clearkey \
+    android.hardware.drm-V1-ndk.vendor \
     libdrm.vendor
 
 # Fingerprint
@@ -235,6 +239,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti \
     android.hardware.health-service.qti_recovery \
+    android.hardware.health-V1-ndk.vendor \
     android.hardware.health@2.1.vendor
 
 # HIDL
@@ -258,6 +263,10 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml \
     IPACM_Filter_cfg.xml
+
+# IR
+PRODUCT_PACKAGES += \
+    android.hardware.ir-V1-ndk.vendor
 
 # Init
 PRODUCT_PACKAGES += \
@@ -288,6 +297,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore.xml \
     android.hardware.security.keymint-V1-ndk.vendor \
+    android.hardware.security.keymint-V2-ndk.vendor \
     android.hardware.security.secureclock-V1-ndk.vendor \
     android.hardware.security.sharedsecret-V1-ndk.vendor
 
@@ -323,6 +333,11 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
+
+# NDK
+PRODUCT_PACKAGES += \
+    android.hardware.common-V2-ndk.vendor \
+    android.hardware.identity-V3-ndk.vendor
 
 # Net
 PRODUCT_PACKAGES += \
