@@ -286,8 +286,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.goodix.events.sh \
-    init.kernel.extra_free_kbytes.sh \
     init.kernel.post_boot-bengal.sh \
+    init.kernel.post_boot-bengal-iot.sh \
     init.kernel.post_boot.sh \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
