@@ -88,8 +88,6 @@ vendor/lib/libar-gpr.so
 vendor/lib/libats.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libbatterylistener.so
-vendor/lib/libeffects.so
-vendor/lib/libeffectsconfig.so
 vendor/lib/libhfp_pal.so
 vendor/lib/liblx-ar_util.so
 -vendor/lib/liblx-osal.so
@@ -127,8 +125,6 @@ vendor/lib64/libar-gpr.so
 vendor/lib64/libats.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libbatterylistener.so
-vendor/lib64/libeffects.so
-vendor/lib64/libeffectsconfig.so
 vendor/lib64/libhfp_pal.so
 vendor/lib64/liblx-ar_util.so
 -vendor/lib64/liblx-osal.so
