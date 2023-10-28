@@ -143,17 +143,6 @@ on property:persist.vendor.sys.rawdump_copy=1
 on property:persist.vendor.sys.rawdump_copy=0
     write /sys/kernel/dload/emmc_dload 0
 
-on property:sys.sysctl.mi_extra_free_kbytes=*
-   write  /sys/kernel/mi_wmark/extra_free_kbytes ${sys.sysctl.mi_extra_free_kbytes}
-   start kernel-extra-free-kbytes
-
-service kernel-extra-free-kbytes /vendor/bin/sh /vendor/bin/init.kernel.extra_free_kbytes.sh
-    class core
-    user root
-    group root
-    disabled
-    oneshot
-
 service kernel-boot /vendor/bin/sh /vendor/bin/init.qti.kernel.sh
     class core
     user root

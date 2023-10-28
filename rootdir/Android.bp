@@ -68,14 +68,14 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.kernel.extra_free_kbytes.sh",
-    src: "bin/init.kernel.extra_free_kbytes.sh",
+    name: "init.kernel.post_boot-bengal.sh",
+    src: "bin/init.kernel.post_boot-bengal.sh",
     vendor: true,
 }
 
 sh_binary {
-    name: "init.kernel.post_boot-bengal.sh",
-    src: "bin/init.kernel.post_boot-bengal.sh",
+    name: "init.kernel.post_boot-bengal-iot.sh",
+    src: "bin/init.kernel.post_boot-bengal-iot.sh",
     vendor: true,
 }
 
