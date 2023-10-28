@@ -1237,19 +1237,6 @@ vendor/etc/init/android.hardware.ir-service.example.rc
 vendor/etc/vintf/manifest/android.hardware.ir-service.example.xml
 vendor/lib64/hw/consumerir.qcom.so
 
-# Kernel scripts
-vendor/bin/init.kernel.extra_free_kbytes.sh
-vendor/bin/init.kernel.post_boot-bengal.sh
-vendor/bin/init.kernel.post_boot.sh
-vendor/bin/init.qcom.class_core.sh
-vendor/bin/init.qcom.post_boot.sh
-vendor/bin/init.qti.dcvs.sh
-vendor/bin/init.qti.early_init.sh
-vendor/bin/init.qti.kernel.sh
-vendor/bin/init.qti.write.sh
-vendor/bin/system_dlkm_modprobe.sh
-vendor/bin/vendor_modprobe.sh
-
 # Keymint
 vendor/bin/hw/android.hardware.security.keymint-service-qti
 vendor/etc/init/android.hardware.security.keymint-service-qti.rc
