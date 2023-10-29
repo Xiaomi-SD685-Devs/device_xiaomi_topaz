@@ -62,7 +62,8 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl
 
 PRODUCT_PACKAGES += \
-    audio.primary.default \
+    audioadsprpcd \
+    audio.primary.bengal \
     audio.r_submix.default \
     audio.usb.default
 
@@ -70,11 +71,14 @@ PRODUCT_PACKAGES += \
     libagm_compress_plugin \
     libagm_mixer_plugin \
     libagm_pcm_plugin \
+    libbatterylistener \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
+    libsndcardparser \
     libtinycompress \
-    libvolumelistener
+    libvolumelistener \
+    sound_trigger.primary.bengal
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml \
