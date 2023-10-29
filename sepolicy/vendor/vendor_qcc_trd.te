@@ -1,0 +1,1 @@
+allow vendor_qcc_trd vendor_sysfs_microdump:dir { search };
