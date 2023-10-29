@@ -1,6 +1,9 @@
 # Camera
 ro.camera.                     u:object_r:exported_default_prop:s0
 
+# Fingerprint
+gf.debug.                      u:object_r:vendor_fp_prop:s0
+
 # GLobal
 ro.boot.hwc                    u:object_r:exported_default_prop:s0
 ro.boot.hwname                 u:object_r:exported_default_prop:s0
@@ -16,3 +19,8 @@ ro.miui.                       u:object_r:exported_system_prop:s0
 ro.fota.oem                    u:object_r:exported_system_prop:s0
 ro.product.mod_device          u:object_r:build_prop:s0
 ro.product.marketname          u:object_r:build_prop:s0
+
+# WiFi
+ro.wlan.bdf                    u:object_r:vendor_public_vendor_default_prop:s0
+ro.wlan.chip                   u:object_r:vendor_public_vendor_default_prop:s0
+ro.ril.oem.wifimac             u:object_r:vendor_wifimac_prop:s0
