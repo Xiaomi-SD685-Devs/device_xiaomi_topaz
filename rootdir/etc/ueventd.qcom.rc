@@ -417,8 +417,8 @@ subsystem mem_buf_vm
 /dev/hbtp_vm              0660   system     system
 
 # LegacyTouch device
-/sys/kernel/qts/primary/trusted_touch*    0660   system     system
-/sys/kernel/qts/secondary/trusted_touch*  0660   system     system
+/sys/kernel/qts/primary/trusted_touch_*    0660   system     system
+/sys/kernel/qts/secondary/trusted_touch_*  0660   system     system
 
 # Add device block for FRP
 /dev/block/platform/soc/7824900.sdhci/by-name/config    0600   system     system
