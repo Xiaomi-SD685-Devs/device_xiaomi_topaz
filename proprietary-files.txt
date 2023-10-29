@@ -15,7 +15,6 @@ vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd
 
 # ADSP
 vendor/bin/adsprpcd
-vendor/bin/audioadsprpcd
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
 vendor/etc/init/vendor.qti.audio-adsprpc-service.rc
 vendor/lib/libadsp_default_listener.so
@@ -59,14 +58,9 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 # Audio
 system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
-vendor/bin/audioflacapp
 vendor/lib/hw/audio.primary.bengal.so
 vendor/lib/hw/audio.usb.bengal.so
 vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libhapticgenerator.so
-vendor/lib/soundfx/libqcompostprocbundle.so
-vendor/lib/soundfx/libqcomvisualizer.so
-vendor/lib/soundfx/libqcomvoiceprocessing.so
 vendor/lib/soundfx/libshoebox.so
 vendor/lib/btaudio_offload_if.so
 vendor/lib/libadm.so
@@ -78,24 +72,18 @@ vendor/lib/libar-gpr.so
 -vendor/lib/libar-pal.so
 vendor/lib/libats.so
 vendor/lib/libaudio_log_utils.so
-vendor/lib/libbatterylistener.so
 vendor/lib/libhfp_pal.so
 vendor/lib/liblx-ar_util.so
 -vendor/lib/liblx-osal.so
 vendor/lib/libmcs.so
 vendor/lib/libqtigefar.so
-vendor/lib/libsndcardparser.so
 -vendor/lib/vendor.qti.hardware.AGMIPC@1.0-impl.so
 -vendor/lib/vendor.qti.hardware.pal@1.0-impl.so
 vendor/lib/vendor.qti.hardware.pal@1.0.so
 vendor/lib64/hw/audio.primary.bengal.so
 vendor/lib64/hw/audio.usb.bengal.so
 vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libhapticgenerator.so
 vendor/lib64/soundfx/libmisoundfx.so
-vendor/lib64/soundfx/libqcompostprocbundle.so
-vendor/lib64/soundfx/libqcomvisualizer.so
-vendor/lib64/soundfx/libqcomvoiceprocessing.so
 vendor/lib64/soundfx/libshoebox.so
 vendor/lib64/btaudio_offload_if.so
 vendor/lib64/libadm.so
@@ -107,14 +95,12 @@ vendor/lib64/libar-gpr.so
 -vendor/lib64/libar-pal.so
 vendor/lib64/libats.so
 vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libbatterylistener.so
 vendor/lib64/libhfp_pal.so
 vendor/lib64/liblx-ar_util.so
 -vendor/lib64/liblx-osal.so
 vendor/lib64/libmcs.so
 vendor/lib64/liboffloadhal.so
 vendor/lib64/libqtigefar.so
-vendor/lib64/libsndcardparser.so
 -vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
 -vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.pal@1.0.so
