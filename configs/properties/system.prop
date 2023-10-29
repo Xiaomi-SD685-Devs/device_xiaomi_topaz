@@ -57,7 +57,6 @@ persist.sys.fuse.passthrough.enable=true
 
 # Soc
 ro.soc.manufacturer=QTI
-ro.soc.model=SM6225
 
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
