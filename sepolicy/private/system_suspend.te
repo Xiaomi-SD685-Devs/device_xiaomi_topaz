@@ -1,1 +1,5 @@
-allow system_suspend sysfs:dir r_dir_perms;
+allow system_suspend sysfs:dir { open read };
+allow system_suspend sysfs:file { getattr };
+allow system_suspend sysfs_net:dir { open read };
+allow system_suspend sysfs_net:file { open read };
+dontaudit system_suspend sysfs:file { open read };
