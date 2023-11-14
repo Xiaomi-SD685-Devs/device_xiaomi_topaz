@@ -1,9 +1,6 @@
 # CNE
 persist.vendor.cne.feature=1
 
-# Charger
-ro.charger.enable_suspend=1
-
 # Ftrace
 persist.debug.ftrace_events_disable=Yes
 
