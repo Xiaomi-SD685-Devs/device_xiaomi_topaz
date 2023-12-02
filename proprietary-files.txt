@@ -103,10 +103,21 @@ vendor/lib64/vendor.qti.hardware.pal@1.0.so
 -vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
 
 # Audio Configs
+odm/etc/audio_policy_engine_configuration_mi.xml:odm/etc/audio_policy_engine_configuration.xml
+odm/etc/audio_policy_engine_default_stream_volumes.xml
+odm/etc/audio_policy_engine_product_strategies.xml
+odm/etc/audio_policy_engine_stream_volumes.xml
+vendor/etc/audio_diag.cfg
+vendor/etc/audio_effects.conf
+vendor/etc/audio_effects.xml
+vendor/etc/audio_policy_engine_configuration_mi.xml:vendor/etc/audio_policy_engine_configuration.xml
+vendor/etc/audio_policy_engine_default_stream_volumes.xml
+vendor/etc/audio_policy_engine_product_strategies.xml
+vendor/etc/audio_policy_engine_stream_volumes.xml
 vendor/etc/backend_conf.xml
 vendor/etc/card-defs.xml
-vendor/etc/mixer_paths_bengal_idp.xml
 vendor/etc/mixer_paths_bengal_idp_india.xml
+vendor/etc/mixer_paths_bengal_idp.xml
 vendor/etc/mixer_paths_bengal_qrd.xml
 vendor/etc/mixer_paths_scubaidp.xml
 vendor/etc/mixer_paths_scubaqrd.xml
