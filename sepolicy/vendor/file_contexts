@@ -6,6 +6,7 @@
 
 # Camera
 /mnt/vendor/persist/camera(/.*)? u:object_r:camera_persist_file:s0
+/(vendor|system/vendor)/lib(64)?/libipebpsstriping\.so                         u:object_r:same_process_hal_file:s0
 
 # Display
 /(vendor|system/vendor)/bin/displayfeature           u:object_r:vendor_displayfeature_exec:s0
@@ -13,12 +14,26 @@
 /dev/mi_display/disp_feature u:object_r:vendor_displayfeature_device:s0
 /sys/devices/virtual/mi_display/disp_feature/disp-DSI-+[0-1](/.*)? u:object_r:vendor_sysfs_displayfeature:s0
 
-# Fingerprint
-/data/vendor/fpc(/.*)? u:object_r:vendor_fingerprint_data_file:s0
-/data/vendor/goodix/gf_data(/.*)? u:object_r:vendor_fingerprint_data_file:s0
-/dev/goodix_fp u:object_r:vendor_fingerprint_device:s0
-/sys/devices/platform/soc/soc:fpc1020(/.*?) u:object_r:vendor_sysfs_fps_attr:s0
-/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service_lc         u:object_r:hal_fingerprint_default_exec:s0
+# Fingerprint data
+/data/gf_data(/.*)?                                                     u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/goodix/gf_data(/.*)?                                       u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/goodix(/.*)?                                               u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/fpc(/.*)?                                                  u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/fpdump(/.*)?                                               u:object_r:vendor_fingerprint_data_file:s0
+/mnt/vendor/persist/fpc(/.*)?                                           u:object_r:vendor_fingerprint_data_file:s0
+/mnt/vendor/persist/goodix(/.*)?                                        u:object_r:vendor_fingerprint_data_file:s0
+/sys/devices/platform/soc/soc:fpc1020(/.*?)                             u:object_r:vendor_sysfs_fps_attr:s0
+
+# Fingerprint devices
+/dev/goodix_fp                                                          u:object_r:fingerprint_device:s0
+/sys/bus/platform/devices/soc:fpc1020/wakeup_enable                     u:object_r:fingerprint_device:s0
+/sys/bus/platform/devices/soc:fpc1020/irq                               u:object_r:fingerprint_device:s0
+/sys/bus/platform/devices/soc:fpc1020/hw_reset                          u:object_r:fingerprint_device:s0
+
+# Fingerprint HAL
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service_lc u:object_r:hal_fingerprint_default_exec:s0
+
+# Fix Goodix events
 /vendor/bin/init.goodix.events.sh                                       u:object_r:vendor_goodix_events_exec:s0
 
 # Health

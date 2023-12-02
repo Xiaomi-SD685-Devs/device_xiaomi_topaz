@@ -2,13 +2,14 @@
 vendor.xiaomi.hardware.displayfeature::IDisplayFeature       u:object_r:vendor_hal_displayfeature_xiaomi_hwservice:s0
 
 # Fingerprint
-vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemon u:object_r:vendor_hal_fingerprint_hwservice_xiaomi:s0
-vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemonExt u:object_r:vendor_hal_fingerprint_hwservice_xiaomi:s0
-com.fingerprints.extension::IFingerprintEngineering u:object_r:vendor_hal_fingerprint_hwservice_xiaomi:s0
-com.fingerprints.extension::IFingerprintAuthenticator u:object_r:vendor_hal_fingerprint_hwservice_xiaomi:s0
-com.fingerprints.extension::IFingerprintNavigation u:object_r:vendor_hal_fingerprint_hwservice_xiaomi:s0
-com.fingerprints.extension::IFingerprintSensorTest u:object_r:vendor_hal_fingerprint_hwservice_xiaomi:s0
-com.fingerprints.extension::IFingerprintCalibration u:object_r:vendor_hal_fingerprint_hwservice_xiaomi:s0
+com.fingerprints.extension::IFingerprintNavigation                                       u:object_r:hal_fingerprint_hwservice:s0
+com.fingerprints.extension::IFingerprintSensorTest                                       u:object_r:hal_fingerprint_hwservice:s0
+com.fingerprints.extension::IFingerprintEngineering                                      u:object_r:hal_fingerprint_hwservice:s0
+com.fingerprints.extension::IFingerprintCalibration                                      u:object_r:hal_fingerprint_hwservice:s0
+com.fingerprints.extension::IFingerprintSenseTouch                                       u:object_r:hal_fingerprint_hwservice:s0
+vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemon                  u:object_r:hal_fingerprint_hwservice:s0
+vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemonExt               u:object_r:hal_fingerprint_hwservice:s0
+vendor.xiaomi.hardware.fingerprintextension::IXiaomiFingerprint               u:object_r:hal_fingerprint_hwservice:s0
 
 # Micharge
 vendor.xiaomi.hardware.micharge::IMiCharge u:object_r:vendor_hal_micharge_xiaomi_hwservice:s0

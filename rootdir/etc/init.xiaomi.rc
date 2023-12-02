@@ -34,10 +34,6 @@ on boot
 
     start nfc_hal_service
 
-    # Hide permissive selinux
-    chmod 0640 /sys/fs/selinux/enforce
-    chmod 0440 /sys/fs/selinux/policy
-
 service vendor.fps_hal_lc /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service_lc
     # "class hal" causes a race condition on some devices due to files created
     # in /data. As a workaround, postpone startup until later in boot once

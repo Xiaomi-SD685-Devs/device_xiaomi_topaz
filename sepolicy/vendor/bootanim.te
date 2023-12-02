@@ -1,2 +1,4 @@
 allow bootanim vendor_audio_prop:file read;
 allow bootanim vendor_proc_audiod:file read;
+
+binder_call(bootanim, vendor_hal_qspmhal_default)

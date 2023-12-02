@@ -4,7 +4,11 @@ allow hal_audio_default vendor_audio_prop:property_service set;
 allow hal_audio_default audio_socket:sock_file rw_file_perms;
 allow hal_audio_default sound_device:chr_file rw_file_perms;
 allow hal_audio_default sysfs:file rw_file_perms;
+allow hal_audio_default dmabuf_system_heap_device:chr_file { read open ioctl };
 allow hal_audio_default debugfs:dir { open read };
+allow hal_audio_default vendor_agm_device:chr_file { read write open ioctl };
+allow hal_audio_default vendor_pd_locater_dbg_prop:file { map };
+get_prop(hal_audio_default, vendor_pd_locater_dbg_prop)
 unix_socket_connect(hal_audio_default, property, init)
 unix_socket_connect(hal_audio_default, property, hal_sensors_default)
 set_prop(hal_audio_default, vendor_audio_prop)
