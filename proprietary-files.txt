@@ -869,7 +869,6 @@ vendor/bin/mlid
 vendor/bin/qcc-trd
 vendor/bin/qcc-vendor
 vendor/bin/ssgtzd
-vendor/bin/tloc_daemon
 vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
 vendor/bin/xtwifi-inet-agent
@@ -881,7 +880,6 @@ vendor/etc/init/loc-launcher.rc
 vendor/etc/init/qseecomd.rc
 vendor/etc/init/shsusrd.rc
 vendor/etc/init/ssgtzd.rc
-vendor/etc/init/tloc_daemon.rc
 vendor/etc/vintf/manifest/android.hardware.gnss-aidl-service-qti.xml
 vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml
 vendor/etc/apdr.conf
@@ -890,8 +888,6 @@ vendor/etc/cacert_location.pem
 vendor/etc/gnss_antenna_info.conf
 vendor/etc/gpfspath_oem_config.xml
 vendor/etc/gps.conf
-vendor/etc/gps_diag.cfg
-vendor/etc/hdr_config.cfg
 vendor/etc/izat.conf
 vendor/etc/lowi.conf
 vendor/etc/sap.conf
@@ -1516,9 +1512,7 @@ vendor/lib64/libril-db.so
 vendor/lib64/libril-legacy.so
 vendor/lib64/libril-qc-ltedirectdisc.so
 vendor/lib64/libril-qc-radioconfig.so
-vendor/lib64/libril.so
 vendor/lib64/librilqmimiscservices.so
-vendor/lib64/librilutils.so
 vendor/lib64/libtinyxml.so
 vendor/lib64/libtinyxml2_1.so
 vendor/lib64/libxml.so
