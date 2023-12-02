@@ -770,11 +770,17 @@ vendor/lib64/libfastcvdsp_stub.so
 -vendor/lib64/libfastcvopt.so
 
 # Fingerprint
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service_lc
 vendor/etc/permissions/com.fingerprints.extension.xml
+vendor/etc/permissions/qti_fingerprint_interface.xml
+vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml
 vendor/framework/com.fingerprints.extension.jar
+vendor/lib64/android.hardware.biometrics.common-V2-ndk.so
+vendor/lib64/android.hardware.biometrics.fingerprint@2.1.so
+vendor/lib64/android.hardware.biometrics.fingerprint-V2-ndk.so
+vendor/lib64/com.fingerprints.extension@1.0.so
 vendor/lib64/hw/fingerprint.fpc.default.so
 vendor/lib64/hw/fingerprint.goodix.default.so
-vendor/lib64/com.fingerprints.extension@1.0.so
 vendor/lib64/libdmabufheapfpc.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
@@ -783,6 +789,7 @@ vendor/lib64/libmifpext.so
 vendor/lib64/libqfp-service.so
 vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 
 # Firmware touch
 odm/firmware/Conf_MultipleTest_ft3519t.ini

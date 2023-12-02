@@ -1,5 +1,6 @@
 on init
-    chmod 0777 /dev/goodix_fp
+    chown system system /dev/goodix_fp
+    chmod 0644 /dev/goodix_fp
 
     # DT2W
     chown system system /proc/tp_gesture
@@ -8,6 +9,9 @@ on init
 on post-fs-data
     mkdir /data/vendor/fpc 0777 system system
     mkdir /data/vendor/goodix 0777 system system
+    mkdir /data/vendor/fpdump 0770 system system
+    mkdir /mnt/vendor/persist/fpc 0770 system system
+    mkdir /mnt/vendor/persist/goodix 0770 system system
     mkdir /data/vendor/nfc 0770 nfc nfc
 
 on post-fs
@@ -23,11 +27,27 @@ on boot
     chmod 0660 /sys/bus/platform/devices/soc:fpc1020/modalias
     chmod 0660 /sys/bus/platform/devices/soc:fpc1020/compatible_all
 
+    chmod 0777 /dev/goodix_fp
+
+    chmod 0664 /sys/bus/platform/devices/soc:xiaomi_fingerprint/fingerdown
+    chown system graphics /sys/bus/platform/devices/soc:xiaomi_fingerprint/fingerdown
+
     start nfc_hal_service
 
     # Hide permissive selinux
     chmod 0640 /sys/fs/selinux/enforce
     chmod 0440 /sys/fs/selinux/policy
+
+service vendor.fps_hal_lc /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service_lc
+    # "class hal" causes a race condition on some devices due to files created
+    # in /data. As a workaround, postpone startup until later in boot once
+    # /data is mounted.
+    class late_start
+    user system
+    group system input uhid
+
+on property:vendor.fps_hal.restartimes=max
+    stop vendor.fps_hal_lc
 
 service stflashtool /vendor/bin/STFlashTool
     class late_start
