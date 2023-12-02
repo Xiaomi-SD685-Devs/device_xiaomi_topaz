@@ -15,6 +15,7 @@ vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd
 
 # ADSP
 vendor/bin/adsprpcd
+vendor/bin/audioadsprpcd
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
 vendor/etc/init/vendor.qti.audio-adsprpc-service.rc
 vendor/lib/libadsp_default_listener.so
@@ -69,11 +70,14 @@ vendor/lib/libar-gpr.so
 -vendor/lib/libar-pal.so
 vendor/lib/libats.so
 vendor/lib/libaudio_log_utils.so
+vendor/lib/libbatterylistener.so
 vendor/lib/libhfp_pal.so
 vendor/lib/liblx-ar_util.so
 -vendor/lib/liblx-osal.so
 vendor/lib/libmcs.so
+vendor/lib/libpalclient.so
 vendor/lib/libqtigefar.so
+vendor/lib/libsndcardparser.so
 -vendor/lib/vendor.qti.hardware.pal@1.0-impl.so
 vendor/lib/vendor.qti.hardware.pal@1.0.so
 vendor/lib64/hw/audio.primary.bengal.so
@@ -87,20 +91,16 @@ vendor/lib64/libar-gpr.so
 -vendor/lib64/libar-pal.so
 vendor/lib64/libats.so
 vendor/lib64/libaudio_log_utils.so
+vendor/lib64/libbatterylistener.so
 vendor/lib64/libhfp_pal.so
 vendor/lib64/liblx-ar_util.so
 -vendor/lib64/liblx-osal.so
 vendor/lib64/libmcs.so
-vendor/lib64/liboffloadhal.so
+vendor/lib64/libpalclient.so
 vendor/lib64/libqtigefar.so
+vendor/lib64/libsndcardparser.so
 -vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.pal@1.0.so
-
-# Audio AGM
--vendor/lib/libagm.so
--vendor/lib/vendor.qti.hardware.AGMIPC@1.0-impl.so
--vendor/lib64/libagm.so
--vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
 
 # Audio Configs
 odm/etc/audio_policy_engine_configuration_mi.xml:odm/etc/audio_policy_engine_configuration.xml
@@ -126,10 +126,61 @@ vendor/etc/resourcemanager_bengal_qrd.xml
 vendor/etc/resourcemanager_scubaidp.xml
 vendor/etc/resourcemanager_scubaqrd.xml
 
+# Audio Graph Manager
+vendor/bin/cplay
+vendor/bin/agmcap
+vendor/bin/agmcompressplay
+vendor/bin/agmhostless
+vendor/bin/agmplay
+-vendor/lib/libagm.so
+vendor/lib/libagmmixer.so
+vendor/lib/libagmclient.so
+vendor/lib/libagm_compress_plugin.so
+vendor/lib/libagm_mixer_plugin.so
+vendor/lib/libagm_pcm_plugin.so
+-vendor/lib/vendor.qti.hardware.AGMIPC@1.0-impl.so
+vendor/lib/vendor.qti.hardware.AGMIPC@1.0.so
+-vendor/lib64/libagm.so
+vendor/lib64/libagmclient.so
+vendor/lib64/libagmmixer.so
+vendor/lib64/libagm_compress_plugin.so
+vendor/lib64/libagm_mixer_plugin.so
+vendor/lib64/libagm_pcm_plugin.so
+-vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so
+
 # Audio SoundFX
+vendor/lib/soundfx/libasphere.so
+vendor/lib/soundfx/libaudiopreprocessing.so
+vendor/lib/soundfx/libbundlewrapper.so
+vendor/lib/soundfx/libdownmix.so
+vendor/lib/soundfx/libdynproc.so
+vendor/lib/soundfx/libeffectproxy.so
+vendor/lib/soundfx/libhapticgenerator.so
+vendor/lib/soundfx/libldnhncr.so
+vendor/lib/soundfx/libqcompostprocbundle.so
+vendor/lib/soundfx/libqcomvisualizer.so
+vendor/lib/soundfx/libqcomvoiceprocessing.so
+vendor/lib/soundfx/libreverbwrapper.so
+vendor/lib/soundfx/libshoebox.so
+vendor/lib/soundfx/libvisualizer.so
+vendor/lib/soundfx/libvolumelistener.so
 vendor/lib64/soundfx/libasphere.so
+vendor/lib64/soundfx/libaudiopreprocessing.so
+vendor/lib64/soundfx/libbundlewrapper.so
+vendor/lib64/soundfx/libdownmix.so
+vendor/lib64/soundfx/libdynproc.so
+vendor/lib64/soundfx/libeffectproxy.so
+vendor/lib64/soundfx/libhapticgenerator.so
+vendor/lib64/soundfx/libldnhncr.so
 vendor/lib64/soundfx/libmisoundfx.so
+vendor/lib64/soundfx/libqcompostprocbundle.so
+vendor/lib64/soundfx/libqcomvisualizer.so
+vendor/lib64/soundfx/libqcomvoiceprocessing.so
+vendor/lib64/soundfx/libreverbwrapper.so
 vendor/lib64/soundfx/libshoebox.so
+vendor/lib64/soundfx/libvisualizer.so
+vendor/lib64/soundfx/libvolumelistener.so
 
 # Battery
 vendor/bin/battery_stats
