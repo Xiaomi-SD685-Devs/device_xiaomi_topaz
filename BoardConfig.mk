@@ -65,6 +65,9 @@ SOONG_CONFIG_ufsbsg_ufsframework := bsg
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := bengal
 
+# Board Info
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
+
 # Display
 TARGET_SCREEN_DENSITY := 420
 
@@ -238,8 +241,8 @@ BOARD_AVB_ODM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
 
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml
+
 DEVICE_MANIFEST_FILE += \
     $(DEVICE_PATH)/configs/vintf/manifest.xml \
     $(DEVICE_PATH)/configs/vintf/network_manifest.xml
