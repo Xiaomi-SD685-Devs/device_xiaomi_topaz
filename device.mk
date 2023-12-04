@@ -379,6 +379,7 @@ PRODUCT_PACKAGES += \
     FrameworksResCommon \
     FrameworksResTarget \
     FrameworksResTopaz \
+    SettingsResTopaz \
     SystemUIResCommon \
     SystemUIResTopaz \
     TelecommResCommon \
