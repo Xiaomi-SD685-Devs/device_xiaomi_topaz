@@ -1,4 +1,5 @@
 # Battery
+genfscon sysfs /class/qcom-battery/quick_charge_type                                u:object_r:vendor_sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/power_supply/usb(/.*)? u:object_r:vendor_sysfs_usb_supply:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/power_supply/battery(/.*)? u:object_r:vendor_sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/qcom-battery/odm_battery(/.*)?  u:object_r:vendor_sysfs_battery_supply:s0
