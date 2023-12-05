@@ -359,10 +359,10 @@
     </array>
 
     <array name="config_sfps_sensor_props_0" translatable="false">
-        <item>local:4630946736638489729</item>
-        <item>1080</item>
-        <item>965</item>
-        <item>115</item>
+        <item></item> <!--item>displayId</item-->
+        <item>1080</item> <!--item>sensorLocationX</item-->
+        <item>920</item> <!--item>sensorLocationY</item-->
+        <item>115</item> <!--item>sensorRadius</item-->
     </array>
 
     <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
