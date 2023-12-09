@@ -1786,6 +1786,10 @@ vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libtrustedapploader.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
+# USB
+vendor/bin/init.qcom.usb.sh
+vendor/etc/init/hw/init.qcom.usb.rc
+
 # UWB
 vendor/lib/libstreamparser.so
 vendor/lib64/libstreamparser.so
