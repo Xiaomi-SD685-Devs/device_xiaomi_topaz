@@ -78,10 +78,6 @@ BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
-# HALs
-BOARD_HALS_DIR := $(DEVICE_PATH)/hals
-include $(BOARD_HALS_DIR)/board_hals.mk
-
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_topaz
 TARGET_RECOVERY_DEVICE_MODULES := init_topaz
