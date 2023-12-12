@@ -8,6 +8,9 @@ genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/qcom-battery/odm_battery
 genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/power_supply/battery/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/power_supply/usb/wakeup u:object_r:sysfs_wakeup:s0
 
+# DT2W
+genfscon proc /tp_gesture                                                      u:object_r:proc_tp_gesture:s0
+
 # Extcon
 genfscon sysfs /devices/platform/soc/1610000.qcom,msm-eud/extcon u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon u:object_r:sysfs_extcon:s0

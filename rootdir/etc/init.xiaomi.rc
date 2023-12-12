@@ -28,10 +28,6 @@ on boot
     chmod 0664 /sys/bus/platform/devices/soc:xiaomi_fingerprint/fingerdown
     chown system graphics /sys/bus/platform/devices/soc:xiaomi_fingerprint/fingerdown
 
-    # DT2W
-    chown system system /dev/xiaomi-touch
-    chmod 0660 /dev/xiaomi-touch
-
     start nfc_hal_service
 
 service vendor.fps_hal_lc /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service_lc
