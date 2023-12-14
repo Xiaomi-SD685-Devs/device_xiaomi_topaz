@@ -60,7 +60,6 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
 vendor/lib/hw/audio.primary.bengal.so
-vendor/lib/hw/audio.usb.bengal.so
 vendor/lib/btaudio_offload_if.so
 vendor/lib/libadm.so
 vendor/lib/libalsautils.so
@@ -81,7 +80,6 @@ vendor/lib/libsndcardparser.so
 -vendor/lib/vendor.qti.hardware.pal@1.0-impl.so
 vendor/lib/vendor.qti.hardware.pal@1.0.so
 vendor/lib64/hw/audio.primary.bengal.so
-vendor/lib64/hw/audio.usb.bengal.so
 vendor/lib64/btaudio_offload_if.so
 vendor/lib64/libadm.so
 vendor/lib64/libalsautils.so

@@ -17,7 +17,6 @@ persist.vendor.audio.voicecall.speaker.stereo=true
 ro.audio.monitorRotation=false
 ro.config.media_vol_default=10
 ro.config.vc_call_vol_steps=11
-ro.vendor.audio.game.mode=true
 ro.vendor.audio.policy.engine.odm=true
 ro.vendor.audio.ring.filter=true
 ro.vendor.audio.scenario.support=true
