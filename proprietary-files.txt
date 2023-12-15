@@ -510,9 +510,6 @@ vendor/etc/camera/vidhance_kernel1.bin
 vendor/etc/camera/vidhance_kernel2.bin
 vendor/etc/camera/xiaomiSceneDetection.xml
 
-# Camera Legacy
-vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
-
 # Camera Post Processing
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
