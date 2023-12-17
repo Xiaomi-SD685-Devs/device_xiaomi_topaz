@@ -1066,6 +1066,9 @@ vendor/lib64/vendor.qti.latency@2.0.so
 vendor/lib64/vendor.qti.latency@2.1.so
 vendor/lib64/vendor.qti.latency@2.2.so
 
+# IMS - from marble MIUI V14.0.9.0.TRMCNXM
+system_ext/priv-app/ims/ims.apk|78b3c10d7071ff0afd9a86910222d1940f05f7a8
+
 # IPA
 vendor/etc/init/ipa_fws.rc
 
@@ -1579,6 +1582,9 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
+
+# Radio - from marble MIUI V14.0.9.0.TRMCNXM
+system_ext/app/QtiTelephony/QtiTelephony.apk|e39418c08672181741835c03bea3009ead2e76d1
 
 # Seccomp
 vendor/etc/seccomp_policy/atfwd@2.0.policy
