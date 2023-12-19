@@ -269,9 +269,6 @@ on property:init.svc.surfaceflinger=restarting
     stop displayfeature
 #display end
 
-on property:ro.boot.multisim_config=*
-    setprop persist.radio.multisim.config ${ro.boot.multisim_config}
-
 # AGM
 service agmhostless_loop_headset /vendor/bin/agmhostless -D 100 -P 103 -C 104 -r 48000 -b 16 -T 60 -i CODEC_DMA-LPAIF_RXTX-TX-3 -o CODEC_DMA-LPAIF_RXTX-RX-0 -pdkv 0xA2000002
     user root
