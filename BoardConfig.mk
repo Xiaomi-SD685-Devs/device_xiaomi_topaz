@@ -63,6 +63,7 @@ SOONG_CONFIG_ufsbsg += ufsframework
 SOONG_CONFIG_ufsbsg_ufsframework := bsg
 
 # Bootloader
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_BOOTLOADER_BOARD_NAME := bengal
 
 # Display
