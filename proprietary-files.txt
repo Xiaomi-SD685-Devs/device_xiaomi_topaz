@@ -112,15 +112,9 @@ vendor/etc/audio_policy_engine_configuration_mi.xml:vendor/etc/audio_policy_engi
 vendor/etc/audio_policy_engine_default_stream_volumes.xml
 vendor/etc/audio_policy_engine_product_strategies.xml
 vendor/etc/audio_policy_engine_stream_volumes.xml
-vendor/etc/backend_conf.xml
 vendor/etc/card-defs.xml
-vendor/etc/mixer_paths_bengal_idp_india.xml
-vendor/etc/mixer_paths_bengal_idp.xml
-vendor/etc/mixer_paths_bengal_qrd.xml
 vendor/etc/mixer_paths_scubaidp.xml
 vendor/etc/mixer_paths_scubaqrd.xml
-vendor/etc/resourcemanager_bengal_idp.xml
-vendor/etc/resourcemanager_bengal_qrd.xml
 vendor/etc/resourcemanager_scubaidp.xml
 vendor/etc/resourcemanager_scubaqrd.xml
 
@@ -1104,7 +1098,6 @@ vendor/etc/vintf/manifest/vendor.qti.hardware.lights.service.xml
 vendor/etc/vintf/manifest/manifest_non_qmaa.xml
 vendor/etc/vintf/manifest/manifest_non_qmaa_extn.xml
 vendor/etc/microphone_characteristics.xml
-vendor/etc/usecaseKvManager.xml
 vendor/lib/hw/sound_trigger.primary.bengal.so
 vendor/lib/libcapiv2svacnnvendor.so
 vendor/lib/libcapiv2svarnnvendor.so
