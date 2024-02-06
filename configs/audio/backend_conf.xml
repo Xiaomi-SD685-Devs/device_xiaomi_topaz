@@ -25,19 +25,23 @@
 <!-- WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE      -->
 <!-- OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN    -->
 <!-- IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                             -->
+
+<!-- Changes from Qualcomm Innovation Center are provided under the following license:    -->
+<!--                                                                                      -->
+<!-- Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.             -->
+<!-- SPDX-License-Identifier: BSD-3-Clause-Clear                                          -->
 <config>
     <group_device name="TDM-LPAIF-RX-TERTIARY" rate="96000" ch="3" bits="16" slot_mask="7"/>
     <device name="TDM-LPAIF-RX-TERTIARY-VIRT-0" rate="96000" ch="2" bits="16" />
-    <device name="CODEC_DMA-LPAIF_WSA-RX-0" rate="48000" ch="2" bits="16" />
-    <device name="CODEC_DMA-LPAIF_WSA-RX-1" rate="48000" ch="2" bits="16" />
+    <device name="CODEC_DMA-LPAIF_WSA-RX-0" rate="48000" ch="1" bits="16" />
+    <device name="CODEC_DMA-LPAIF_WSA-RX-1" rate="48000" ch="1" bits="16" />
     <device name="CODEC_DMA-LPAIF_RXTX-RX-0" rate="48000" ch="1" bits="16" />
-    <device name="CODEC_DMA-LPAIF_RXTX-RX-1" rate="48000" ch="2" bits="16" />
+    <device name="CODEC_DMA-LPAIF_RXTX-RX-1" rate="48000" ch="1" bits="16" />
     <device name="TDM-LPAIF_AXI-RX-PRIMARY" rate="48000" ch="2" bits="16" />
     <device name="SLIM-DEV1-RX-0" rate="48000" ch="2" bits="16" />
     <device name="DISPLAY_PORT-RX" rate="48000" ch="2" bits="16" />
     <device name="USB_AUDIO-RX" rate="48000" ch="2" bits="16" />
     <device name="CODEC_DMA-LPAIF_RXTX-TX-3" rate="48000" ch="1" bits="16" />
-    <device name="CODEC_DMA-LPAIF_RXTX-TX-4" rate="48000" ch="2" bits="16" />
     <device name="CODEC_DMA-LPAIF_VA-TX-0" rate="48000" ch="1" bits="16" />
     <device name="CODEC_DMA-LPAIF_VA-TX-1" rate="48000" ch="1" bits="16" />
     <device name="MI2S-LPAIF_AXI-TX-PRIMARY" rate="48000" ch="1" bits="16" />
@@ -68,5 +72,9 @@
     <device name="TDM-LPAIF_VA-TX-PRIMARY" rate="48000" ch="1" bits="16" />
     <device name="TDM-LPAIF_WSA-RX-PRIMARY" rate="48000" ch="1" bits="16" />
     <device name="TDM-LPAIF_WSA-TX-PRIMARY" rate="48000" ch="1" bits="16" />
+    <device name="TDM-LPAIF_AXI-TX-PRIMARY" rate="48000" ch="2" bits="16" />
+    <device name="AUXPCM-LPAIF_AXI-TX-PRIMARY" rate="48000" ch="2" bits="16" />
+    <device name="MI2S-LPAIF_AXI-RX-PRIMARY" rate="48000" ch="2" bits="16" />
+    <device name="AUXPCM-LPAIF_AXI-RX-PRIMARY" rate="48000" ch="2" bits="16" />
 </config>
 
