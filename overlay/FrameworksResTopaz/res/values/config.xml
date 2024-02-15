@@ -369,7 +369,7 @@
     <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/qcom-battery/quick_charge_type</string>
 
     <!-- Build fingerprint from stock ROM -->
-    <string name="config_stockFingerprint" translatable="false">Redmi/topaz_global/topaz:13/TKQ1.221114.001/V14.0.8.0.TMGMIXM:user/release-keys</string>
+    <string name="config_stockFingerprint" translatable="false">Redmi/topaz_global/topaz:13/TKQ1.221114.001/V816.0.2.0.UMGMIXM:user/release-keys</string>
 
     <!-- Device model (Build.MODEL) to spoof for netflix -->
     <string name="config_netflixSpoofModel" translatable="false">23021RAA2Y</string>
