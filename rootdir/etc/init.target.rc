@@ -269,37 +269,6 @@ on property:init.svc.surfaceflinger=restarting
     stop displayfeature
 #display end
 
-# AGM
-service agmhostless_loop_headset /vendor/bin/agmhostless -D 100 -P 103 -C 104 -r 48000 -b 16 -T 60 -i CODEC_DMA-LPAIF_RXTX-TX-3 -o CODEC_DMA-LPAIF_RXTX-RX-0 -pdkv 0xA2000002
-    user root
-    group root audio system
-    disabled
-    oneshot
-
-service agmhostless_loop_hsmic_rcv /vendor/bin/agmhostless -D 100 -P 103 -C 104 -c 1 -r 48000 -b 16 -T 60 -i CODEC_DMA-LPAIF_RXTX-TX-3 -o CODEC_DMA-LPAIF_RXTX-RX-0
-    user root
-    group root audio system
-    disabled
-    oneshot
-
-service agmhostless_loop_rcv /vendor/bin/agmhostless -D 100 -P 103 -C 104 -c 1 -r 48000 -b 16 -T 60 -i CODEC_DMA-LPAIF_RXTX-TX-3 -o CODEC_DMA-LPAIF_RXTX-RX-0 -cdkv 0xA3000004 -skv 0xA1000003 -pdkv 0xA2000004
-    user root
-    group root audio system
-    disabled
-    oneshot
-
-service agmhostless_loop_spk /vendor/bin/agmhostless -D 100 -P 103 -C 104 -c 1 -r 48000 -b 16 -T 60 -i CODEC_DMA-LPAIF_RXTX-TX-3 -o CODEC_DMA-LPAIF_RXTX-RX-0 -cdkv 0xA3000004 -skv 0xA1000003 -pdkv 0xA2000001
-    user root
-    group root audio system
-    disabled
-    oneshot
-
-service agmhostless_loop /vendor/bin/agmhostless -D 100 -P 103 -C 104 -c 1 -r 48000 -b 16 -T 60 -i CODEC_DMA-LPAIF_RXTX-TX-3 -o CODEC_DMA-LPAIF_RXTX-RX-0
-    user root
-    group root audio system
-    disabled
-    oneshot
-
 #add for wifi 9434 log
 service vendor.tcpdump /vendor/bin/vendor_tcpdump -i any -W 2 -C 2 -s 134 -w /data/vendor/wlan_logs/tcpdump.pcap
     class main
