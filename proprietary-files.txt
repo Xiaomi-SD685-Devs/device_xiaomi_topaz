@@ -60,7 +60,6 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
 vendor/lib/hw/audio.primary.bengal.so
-vendor/lib/btaudio_offload_if.so
 vendor/lib/libadm.so
 vendor/lib/libalsautils.so
 vendor/lib/libar-acdb.so
@@ -80,7 +79,6 @@ vendor/lib/libsndcardparser.so
 -vendor/lib/vendor.qti.hardware.pal@1.0-impl.so
 vendor/lib/vendor.qti.hardware.pal@1.0.so
 vendor/lib64/hw/audio.primary.bengal.so
-vendor/lib64/btaudio_offload_if.so
 vendor/lib64/libadm.so
 vendor/lib64/libalsautils.so
 vendor/lib64/libar-acdb.so
@@ -180,27 +178,33 @@ vendor/bin/batterysecret
 vendor/etc/init/init.batterysecret.rc
 vendor/etc/init/vendor.qti.battery_stats.rc
 
-# Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
+# Bluetooth - from sapphire V14.0.6.0.TNGMIXM
+system_ext/app/BluetoothDsDaService/BluetoothDsDaService.apk|d9c624977af4244e42ea551673bc31a6419657f4
+system_ext/etc/bluetooth/leaudio_configs.xml|9bcdda1267740f85c1f3581697d20c2967f3f7a8
+system_ext/etc/default-permissions/com.qualcomm.qtil.btdsda.xml|772b2a03833764c08f8023a5b143d3f9357f1f67
+system_ext/lib/com.qualcomm.qti.ant@1.0.so|c1a0894e23411b77971a5a87a81165ca8a3866a6
+system_ext/lib64/com.qualcomm.qti.ant@1.0.so|2bdd0b1538f514f237c2ed3915d755cdbd5e2743
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|3fdd0f9750dfb32379cef426accfec65b35db095
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|f388575998e706e2acfa20916e21f2aa32832c76
 
-# Bluetooth ( A2DP )
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib64/lib_bt_aptx.so
-vendor/lib64/lib_bt_ble.so
-vendor/lib64/lib_bt_bundle.so
-vendor/lib64/libbluetooth_audio_session_qti.so
-vendor/lib64/libbluetooth_audio_session_qti_2_1.so
-vendor/lib64/libbt-hidlclient.so
-vendor/lib64/libbtnv.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
-vendor/lib64/vendor.qti.hardware.bttpi-V2-ndk.so
+# Bluetooth ( A2DP ) - from sapphire V14.0.6.0.TNGMIXM
+vendor/lib64/btaudio_offload_if.so|e8d63e2be19067f4852dccb2e56a2fab602ad75d
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|576a90b8cd39eea8f7f45852ceda81a899fa5ecf
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so|12647125760b6072527d785e508bfc169835fa0f
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|cc1fc8aa090299bbe58108a2c07d77701951465e
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|51738529a7108c2c2a510e9369150936e7c0577d
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|7229f27b5087ee3b9944b98132db21c4c52460d8
+vendor/lib64/lib_bt_aptx.so|f77dc17bab5f93422d5d323ad2cbea30a25741e0
+vendor/lib64/lib_bt_ble.so|ccdf0cff41d5dc54fa82c80ea563cdeb000ba632
+vendor/lib64/lib_bt_bundle.so|6a0074602857e1a5de1b4cc24afef16514b8ba7e
+vendor/lib64/libbluetooth_audio_session_qti.so|7028a618095e8a159afab1fa341b4c3589871616
+vendor/lib64/libbluetooth_audio_session_qti_2_1.so|484ccc22ca64a94eea561f4a78d2fdd2a1889d7f
+vendor/lib64/libbt-hidlclient.so|d00287d03b5f57da0f733530cf82caf41499856d
+vendor/lib64/libbtnv.so|67eb17dce254d9fa3ca6f7983dd20ba3b619cb7c
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|8766b54fae1d4a7ae8a1acf333569d2cab18840e
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|b95ab3719e184eaeffdc4a1f3b7e6e306d9091f6
+vendor/lib64/vendor.qti.hardware.bttpi-V2-ndk.so|e2d81d73fdf039b8e464ef8f2f69fb4d1057c5aa
 
 # Camera
 vendor/lib/libcamxexternalformatutils.so
