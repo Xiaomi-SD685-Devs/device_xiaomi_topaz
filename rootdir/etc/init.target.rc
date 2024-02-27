@@ -297,6 +297,25 @@ on property:persist.sys.cota.carrier=OR
 on property:persist.ro.ril.oem.btmac=*
   setprop ro.ril.oem.btmac ${persist.ro.ril.oem.btmac}
 
+# Sync attribute volume between system and vendor
+on property:sys.volume.stream.music.device.speaker=*
+    setprop vendor.volume.stream.music.device.speaker ${sys.volume.stream.music.device.speaker}
+
+on property:sys.volume.stream.music.device.usb.headset=*
+    setprop vendor.volume.stream.music.device.usb.headset ${sys.volume.stream.music.device.usb.headset}
+
+on property:sys.volume.stream.music.device.wired.headset=*
+    setprop vendor.volume.stream.music.device.wired.headset ${sys.volume.stream.music.device.wired.headset}
+
+on property:sys.volume.stream.music.device.wired.headphone=*
+    setprop vendor.volume.stream.music.device.wired.headphone ${sys.volume.stream.music.device.wired.headphone}
+
+on property:sys.volume.stream.music.device.bluetooth=*
+    setprop vendor.volume.stream.music.device.bluetooth ${sys.volume.stream.music.device.bluetooth}
+
+on property:sys.volume.stream.bluetoothsco=*
+    setprop vendor.volume.stream.bluetoothsco ${sys.volume.stream.bluetoothsco}
+
 service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     override
     class hal
