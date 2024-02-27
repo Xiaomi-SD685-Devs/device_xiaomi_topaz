@@ -32,10 +32,18 @@
 <!-- SPDX-License-Identifier: BSD-3-Clause-Clear                                       -->
 <resource_manager_info>
     <config_params>
-        <param key="native_audio_mode" value="false"/>
+        <param key="native_audio_mode" value="multiple_mix_dsp"/>
         <param key="max_sessions" value="128"/>
         <param key="logging_level" value ="3" />
     </config_params>
+    <config_volume>
+        <use_volume_set_param>1</use_volume_set_param>
+        <supported_streams>
+            <supported_stream>PAL_STREAM_COMPRESSED</supported_stream>
+            <supported_stream>PAL_STREAM_PCM_OFFLOAD</supported_stream>
+            <supported_stream>PAL_STREAM_VOIP_RX</supported_stream>
+        </supported_streams>
+    </config_volume>
     <config_gapless key="gapless_supported" value="1"/>
     <bt_codecs>
         <codec codec_format="CODEC_TYPE_AAC" codec_type="enc|dec"
@@ -159,7 +167,7 @@ should always be in sync with it -->
                 </custom-config>
                 <custom-config key="unprocessed-hdr-mic-inverted-portrait">
                     <channels>4</channels>
-                    <snd_device_name>unprocessed-hdr-mic-inverted-portrait</snd_device_name>
+                <snd_device_name>unprocessed-hdr-mic-inverted-portrait</snd_device_name>
                </custom-config>
             </usecase>
             <ec_rx_device>
@@ -274,6 +282,9 @@ should always be in sync with it -->
             </usecase>
             <usecase>
                 <name>PAL_STREAM_ULTRA_LOW_LATENCY</name>
+            </usecase>
+            <usecase>
+                <name>PAL_STREAM_LOOPBACK</name>
             </usecase>
             <usecase>
                 <name>PAL_STREAM_COMPRESSED</name>
@@ -498,6 +509,38 @@ should always be in sync with it -->
                     <snd_device_name>speaker</snd_device_name>
                 </custom-config>
             </usecase>
+            <usecase>
+                <name>PAL_STREAM_PCM_OFFLOAD</name>
+                <sidetone_mode>HW</sidetone_mode>
+                <custom-config key="speaker-top">
+                    <channels>1</channels>
+                    <snd_device_name>speaker-top</snd_device_name>
+                </custom-config>
+                <custom-config key="speaker-bot">
+                    <channels>1</channels>
+                    <snd_device_name>speaker-bot</snd_device_name>
+                </custom-config>
+                <custom-config key="speaker-tl">
+                    <channels>2</channels>
+                    <snd_device_name>speaker-tl</snd_device_name>
+                </custom-config>
+                <custom-config key="speaker-th">
+                    <channels>2</channels>
+                    <snd_device_name>speaker-th</snd_device_name>
+                </custom-config>
+                <custom-config key="speaker-bl">
+                    <channels>2</channels>
+                    <snd_device_name>speaker-bl</snd_device_name>
+                </custom-config>
+                <custom-config key="speaker-bh">
+                    <channels>2</channels>
+                    <snd_device_name>speaker-bh</snd_device_name>
+                </custom-config>
+                <custom-config key="speaker-default">
+                    <channels>1</channels>
+                    <snd_device_name>speaker</snd_device_name>
+                </custom-config>
+            </usecase>
             <!-- lct audio add for cit end -->
             <speaker_protection_enabled>0</speaker_protection_enabled>
             <cps_enabled>0</cps_enabled>
@@ -577,6 +620,12 @@ should always be in sync with it -->
             </usecase>
         -->
            <usecase>
+                <name>PAL_STREAM_LOW_LATENCY</name>
+                <custom-config key="headphones-combo_custom_key">
+                    <snd_device_name>headphones-combo</snd_device_name>
+                </custom-config>
+           </usecase>
+           <usecase>
                <name>PAL_STREAM_VOICE_CALL</name>
                <priority>1</priority>
                <samplerate>48000</samplerate>
@@ -616,6 +665,12 @@ should always be in sync with it -->
                 </custom-config>
             </usecase>
         -->
+           <usecase>
+                <name>PAL_STREAM_LOW_LATENCY</name>
+                <custom-config key="headphones-combo_custom_key">
+                    <snd_device_name>headphones-combo</snd_device_name>
+                </custom-config>
+           </usecase>
            <usecase>
                <name>PAL_STREAM_DEEP_BUFFER</name>
                <custom-config key="cs-mode">
@@ -700,6 +755,7 @@ should always be in sync with it -->
             <name>PAL_STREAM_VOIP_TX</name>
                 <policies>
                     <ec_ref>
+                        <!-- lct delete PAL_STREAM_LOW_LATENCY -->
                         <disabled_stream>PAL_STREAM_GENERIC</disabled_stream>
                     </ec_ref>
                 </policies>
@@ -733,13 +789,13 @@ should always be in sync with it -->
                 </policies>
         </in_stream>
         <in_stream>
-            <name>PAL_STREAM_COMPRESSED</name>
-               <policies>
-                   <ec_ref>
-                       <disabled_stream>PAL_STREAM_LOW_LATENCY</disabled_stream>
-                       <disabled_stream>PAL_STREAM_GENERIC</disabled_stream>
-                   </ec_ref>
-               </policies>
+           <name>PAL_STREAM_COMPRESSED</name>
+              <policies>
+                  <ec_ref>
+                      <disabled_stream>PAL_STREAM_LOW_LATENCY</disabled_stream>
+                      <disabled_stream>PAL_STREAM_GENERIC</disabled_stream>
+                  </ec_ref>
+              </policies>
        </in_stream>
     </in_streams>
     <sound_trigger_platform_info>
@@ -805,7 +861,7 @@ ports not conflicting with other audio paths  -->
                     <!-- see kvh2xml.h -->
                     <kvpair key="0xAD000000" value="0xAD00000C"/>
                 </devicePP-metadata>
-                <param snd_name="va-mic-mono-lpi" />
+                <param snd_name="va-mic-mono" />
             </capture_profile>
             <capture_profile name="SINGLE_MIC_16KHZ_16BIT_RAW_NLPI">
                 <param sample_rate="16000" />
@@ -886,6 +942,7 @@ ports not conflicting with other audio paths  -->
         <!-- QTI SVA -->
         <sound_model_config>
             <param vendor_uuid="68ab2d40-e860-11e3-95ef-0002a5d5c51b"/>
+            <param get_module_version="false" />
             <!-- durations in us -->
             <param kw_start_tolerance="300000" />
             <param kw_end_tolerance="240000" />
@@ -969,8 +1026,8 @@ ports not conflicting with other audio paths  -->
             <param client_capture_read_delay="2000" />
             <operating_modes>
                 <low_power capture_profile_handset="SINGLE_MIC_16KHZ_16BIT_RAW_LPI" capture_profile_headset="SINGLE_MIC_16KHZ_16BIT_HEADSET_RAW_LPI"/>
-                <high_performance capture_profile_handset="DUAL_MIC_16KHZ_16BIT_RAW_NLPI" capture_profile_headset="SINGLE_MIC_16KHZ_16BIT_HEADSET_RAW_NLPI"/>
-                <high_performance_and_charging capture_profile_handset="DUAL_MIC_16KHZ_16BIT_RAW_NLPI" capture_profile_headset="SINGLE_MIC_16KHZ_16BIT_HEADSET_RAW_NLPI"/>
+                <high_performance capture_profile_handset="SINGLE_MIC_16KHZ_16BIT_RAW_NLPI" capture_profile_headset="SINGLE_MIC_16KHZ_16BIT_HEADSET_RAW_NLPI"/>
+                <high_performance_and_charging capture_profile_handset="SINGLE_MIC_16KHZ_16BIT_RAW_NLPI" capture_profile_headset="SINGLE_MIC_16KHZ_16BIT_HEADSET_RAW_NLPI"/>
             </operating_modes>
             <module_params>
                 <param module_type="HOTWORD" />
@@ -979,6 +1036,9 @@ ports not conflicting with other audio paths  -->
                 <param buffering_config_ids="0xC0000008, 0x08001044" />
                 <param version_ids="0xC0000008, 0x18000101" />
                 <param engine_reset_ids="0xC0000008, 0x08001051" />
+                <streamConfig-metadata>
+                    <kvpair key="0xBC000000" value="0xBC000002"/>
+                </streamConfig-metadata>
             </module_params>
         </sound_model_config>
     </sound_trigger_platform_info>
